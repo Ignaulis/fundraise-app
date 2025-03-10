@@ -1,0 +1,87 @@
+@use './colors.scss' as C;
+@use './vars.scss' as V;
+
+.nav-wrapper {
+    padding: 0 15% 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 -3px 10px 1px black;
+
+    
+
+        a {
+            text-decoration: none;
+            color: C.$black;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 200;
+
+        }
+
+    
+    .nav-full-list,
+    .nav-login-reg{
+        display: flex;
+        gap: 50px;
+    }
+
+    .logo {
+        width: 180px;
+
+        img {
+            
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+    }
+
+    .nav-login-reg,
+    .nav-full-list {
+        a {
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            border-radius: 20px;
+            transition: all 0.4s;
+            &:hover {
+                background-color: C.$grey;
+            }
+        }
+        .user-name {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #086788;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-btn {
+            width: max-content;
+            height: max-content;
+            border: none;
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 200;
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+                background-color: C.$grey;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .nav-wrapper {
+        padding: 0 5% 5% 5%;
+    }
+}

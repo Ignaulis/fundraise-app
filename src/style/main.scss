@@ -1,0 +1,57 @@
+@use './nav.scss';
+@use './hero.scss';
+@use './colors.scss' as C;
+@use './card.scss';
+@use './login.scss';
+@use './register.scss';
+@use './fundrise.scss';
+@use './modals.scss';
+@use './donate.scss';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.page404 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .second-page404 {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        background-color: C.$red;
+        border-radius: 20px;
+    }
+}
+
+.home-wrapper{
+    .home-text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 60px 0;
+    span {
+        font-size: 60px;
+        letter-spacing: 3px;
+        border-bottom: 1px solid black;
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+}
+}

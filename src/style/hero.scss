@@ -1,0 +1,75 @@
+@use './colors.scss' as C;
+
+
+.hero-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+
+    .hero-text{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hero-text-container {
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 70px;
+
+            p {
+                font-size: 50px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            a {
+                text-decoration: none;
+                width: 200px;
+                padding: 18px;
+                font-size: 30px;
+                letter-spacing: 2px;
+                cursor: pointer;
+                border-radius: 20px;
+                border: none;
+                background-color: #88d798;
+                border: 2px solid #88d798;
+                transition: all 0.3s;
+                color: black;
+                &:hover {
+                    border: 2px solid black;
+                    background-color: white;
+
+
+
+                }
+            }
+        }
+    }
+    
+    .hero-image {
+        width: 70%;
+        height: 600px;
+        img {
+            width: 100%;
+
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        .hero-image {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .hero-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
