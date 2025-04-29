@@ -1,42 +1,53 @@
 # Group Fundraising Platform
 
-This project is a web platform for group fundraising, inspired by platforms like GoFundMe. It allows users to create and support various stories or ideas by contributing funds.
+This is my first full-stack project. The goal was to create a group fundraising web platform similar to [GoFundMe](https://www.gofundme.com/), using modern web technologies.
 
-**Note:** This project was my first full-stack development endeavor.
+## 🛠️ Tech Stack
 
-## Key Features
+- **Frontend**: React
+- **Backend**: Node.js, Express
+- **Database**: MySQL
 
-The platform consists of a public area and an administration area, along with user registration and login functionalities.
+## 🌐 Features
 
-**Public Area:**
+### Public Area
 
-* **Create New Story/Idea:** Registered users can create their own stories or ideas, upload an image, and specify a target fundraising amount.
-* **List of Stories/Ideas:** Displays all approved stories/ideas where users can:
-    * View the story/idea text.
-    * See the associated image.
-    * View the target fundraising amount.
-    * See the currently raised amount.
-    * See the remaining amount needed to reach the goal.
-    * View a history of donations (donor name and amount).
-    * Donate to a selected story/idea by entering their name and donation amount.
+#### 📜 List of Stories/Ideas
+- Displays all submitted stories/ideas.
+- Each item shows:
+  - Story text
+  - Image
+  - Target amount
+  - Amount raised so far
+  - Remaining amount
+  - Donation history (donor name and amount)
+  - Donation form with two fields: donor name and donation amount
 
-    The list is ordered with ongoing campaigns at the top and completed campaigns at the bottom. Completed campaigns are visually distinct and do not have donation input fields. Once a campaign reaches its target amount, further donations are disabled.
-* **New Story/Idea Creation Page:** A dedicated page where users can input the details of their story/idea, including the text, an image, and the target amount.
+> Stories that have not yet reached their goal are shown at the top.  
+> Stories that have reached their target are displayed differently (with a success message and disabled donation form).
 
-**Administration Area:**
+#### ➕ Create a New Story/Idea
+- Available to all registered users
+- Users can submit:
+  - A short story or idea
+  - An image
+  - The target fundraising amount
 
-* Administrators can log in to a dedicated area.
-* In the administration area, administrators can view all submitted stories/ideas.
-* Administrators have the ability to approve or delete stories/ideas.
-* Only administrator-approved stories/ideas are visible in the public area.
+### Admin Area
 
-## Technologies Used
+- Accessible only to users with admin rights
+- Admins can:
+  - View all submitted stories/ideas
+  - Approve or delete submissions
+- Only approved stories/ideas are visible in the public area
 
-* **Backend:** Node.js with Express framework
-* **Database:** MySQL
-* **Frontend:** React
+### 🔐 Authentication
 
-## Getting Started (Optional - you might want to add more detail later)
+- User Registration
+- User Login
+- Admin role-based access control
+
+## 📦 Installation
 
 To run this project locally, you will need to have Node.js, npm (or yarn), and MySQL installed on your machine.
 
@@ -77,3 +88,8 @@ To run this project locally, you will need to have Node.js, npm (or yarn), and M
     ```
 
 Please refer to the individual `backend` and `frontend` directories for more specific setup instructions and configuration options.
+
+## 📚 License
+
+```text
+This project is open-source and free to use.
