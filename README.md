@@ -4,7 +4,7 @@ This is my first full-stack project. The goal was to create a group fundraising 
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React
+- **Frontend**: React, Scss
 - **Backend**: Node.js, Express
 - **Database**: MySQL
 
