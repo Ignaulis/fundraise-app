@@ -47,13 +47,18 @@ This is my first full-stack project. The goal was to create a group fundraising 
 - User Login
 - Admin role-based access control
 
+### 📸 Screenshots
+
+![App Preview1](public/path/to/fond1.png)
+![App Preview2](public/path/to/fond2.png)
+
 ## 📦 Installation
 
 To run this project locally, you will need to have Node.js, npm (or yarn), and MySQL installed on your machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/Ignaulis/fundraise-app.git
     ```
 2.  **Install backend dependencies:**
     ```bash
@@ -86,8 +91,6 @@ To run this project locally, you will need to have Node.js, npm (or yarn), and M
     # or
     yarn start
     ```
-
-Please refer to the individual `backend` and `frontend` directories for more specific setup instructions and configuration options.
 
 ## 📚 License
 
